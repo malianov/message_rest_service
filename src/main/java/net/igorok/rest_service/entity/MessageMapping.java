@@ -27,7 +27,7 @@ public class MessageMapping implements Serializable {
     @NotNull
     @JoinColumn(name="message_id")
     @ManyToOne(targetEntity = Message.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private User message_id;
+    private Message message_id;
 
     public long getId() {
         return id;
@@ -53,11 +53,11 @@ public class MessageMapping implements Serializable {
         this.from_id = from_id;
     }
 
-    public User getMessage_id() {
+    public Message getMessage_id() {
         return message_id;
     }
 
-    public void setMessage_id(User message_id) {
+    public void setMessage_id(Message message_id) {
         this.message_id = message_id;
     }
 

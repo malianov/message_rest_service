@@ -1,16 +1,15 @@
 package net.igorok.rest_service.repository;
 
-import net.igorok.rest_service.entity.Message;
+
 import net.igorok.rest_service.entity.MessageMapping;
 import net.igorok.rest_service.entity.User;
-import org.eclipse.persistence.internal.oxm.Root;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.swing.text.html.parser.Entity;
+import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.logging.Logger;
 
